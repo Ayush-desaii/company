@@ -1,211 +1,471 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!doctype html>
+
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui">
-    <title>IT Solution Company</title>
-    <link rel="stylesheet" href="styles.css">
+
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui">
+
+<title>Digital Business Card | Virtual Business Card</title>
+
+<link href="styles.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script>
+
+            document.documentElement.style.setProperty('--theme-color', '#062a43');
+
+            document.documentElement.style.setProperty('--theme-color-light', '#6d126f70');
+
+        </script>
+
 </head>
+
 <body>
-    <header>
-        <h1>IT Solution Company</h1>
-        <nav>
-            <input type="button" id="button" value="Home" onClick="document.getElementById('home').scrollIntoView();" />
-            <input type="button" id="button" value="About" onClick="document.getElementById('about').scrollIntoView();" />
-            <input type="button" id="button" value="Services" onClick="document.getElementById('services').scrollIntoView();" />
-            <input type="button" id="button" value="Payment" onClick="document.getElementById('payment').scrollIntoView();" />
-            <input type="button" id="button" value="Gallery" onClick="document.getElementById('gallery').scrollIntoView();" />
-            <input type="button" id="button" value="Feedback" onClick="document.getElementById('feedback').scrollIntoView();" />
-            <input type="button" id="button" value="Enquiry" onClick="document.getElementById('enquiry').scrollIntoView();" />
-        </nav>
-    </header>
 
-    <div id="home">
-        <div class="profile">
-            <div class="profile-bg">
-                <img src="background.jpeg" alt="Background Image" class="background-img">
-                <img src="profile.jpeg" alt="Profile Picture" class="profile-pic">
-            </div>
-            <h2>John Doe</h2>
-            <p class="background">Experienced IT professional with over 10 years in the industry.</p>
-            <p class="address">123 Main St, Springfield, USA</p>
-            <p class="contact">Email: john.doe@example.com | Phone: (123) 456-7890</p>
+<div class="main-wrapper" id="home">
+    <div class="headerbg">
+        <div class="personface"><img src="profile.jpeg" class="img-responsive" alt="profile Picture" /></div>
+        <div class="text-center">
+            <div class="personname"><span>john doe</span></div>
+	        <div class="companyname"><span class="designation">Founder</span> at company</div>
         </div>
+
+        <div class="social-icons">
+            <a href="#"  title="facebook"> 
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </a>
+            <a href="#" title="twitter"> 
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            </a>
+            <a href="#" title="instagram">  
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="#" title="linkedin">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </a>
+        </div>
+
     </div>
 
-    <div id="about">
-        <div class="about-us">
-            <h2>Company Name: IT Solution Company</h2>
-            <p class="established">Established: 2010</p>
-            <p class="description">We are a leading IT solutions provider offering a wide range of services to help businesses thrive in the digital age. Our team of experts is dedicated to delivering innovative and customized solutions that meet the unique needs of each client.</p>
-            <h3>Our Services</h3>
-            <ul class="services">
-                <li>Software Development</li>
-                <li>Network Security</li>
-                <li>Cloud Computing</li>
-                <li>IT Consulting</li>
-            </ul>
-            <h3>Useful Links</h3>
-            <ul class="links">
-                <li><a href="https://www.example.com/service1">Service 1</a></li>
-                <li><a href="https://www.example.com/service2">Service 2</a></li>
-                <li><a href="https://www.example.com/service3">Service 3</a></li>
-                <li><a href="https://www.example.com/service4">Service 4</a></li>
-            </ul>
-            <div class="download">
-                <a href="brochure.pdf" download="IT_Solution_Company_Brochure.pdf">Download Our Brochure (PDF)</a>
+    <div class="firstpagebottom">
+
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>123 Main Street, City, Country</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:example@example.com">example@example.com</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <a href="tel:+1234567890">+1 234 567 890</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-globe"></i>
+                <a href="http://www.example.com" target="_blank">www.example.com</a>
             </div>
         </div>
     </div>
+</div>
 
-    <div id="services">
+<div class="page-container" id="aboutus">
+
+    <div class="about-us">
+        <h2>About Us</h2>
+        <p>Welcome to <strong>Tech Innovators Inc.</strong>, a leading technology company dedicated to delivering innovative solutions to businesses worldwide. Our expertise spans across software development, cloud computing, artificial intelligence, and cybersecurity.</p>
         
-    <h2>Our Services</h2>
-    <div class="service-container">
-        <div class="service">
-            <img src="software-development.jpg" alt="Software Development">
-            <h3>Software Development</h3>
-            <p>Custom software solutions tailored to your business needs.</p>
-            <p class="price">$5000</p>
-            <button class="enquiry-button">Enquire Now</button>
-        </div>
-        <div class="service">
-            <img src="network-security.jpg" alt="Network Security">
-            <h3>Network Security</h3>
-            <p>Protect your network with our advanced security services.</p>
-            <p class="price">$3000</p>
-            <button class="enquiry-button">Enquire Now</button>
-        </div>
-        <div class="service">
-            <img src="cloud-computing.jpg" alt="Cloud Computing">
-            <h3>Cloud Computing</h3>
-            <p>Scalable and reliable cloud solutions for your business.</p>
-            <p class="price">$4000</p>
-            <button class="enquiry-button">Enquire Now</button>
-        </div>
-        <div class="service">
-            <img src="it-consulting.jpg" alt="IT Consulting">
-            <h3>IT Consulting</h3>
-            <p>Expert advice to optimize your IT infrastructure.</p>
-            <p class="price">$2000</p>
-            <button class="enquiry-button">Enquire Now</button>
-        </div>
-    </div>
-</div>
-
-<div id="payment">
-    <h2>Payment Information</h2>
-    <div class="payment-details">
-        <h3>Account Details</h3>
-        <p>Bank: XYZ Bank</p>
-        <p>Account Name: IT Solution Company</p>
-        <p>Account Number: 123456789</p>
-        <p>IFSC Code: XYZ1234</p>
-    </div>
-    <div class="qr-codes">
-        <h3>QR Codes for Payment</h3>
-        <div class="qr-code">
-            <img src="qr-code1.png" alt="QR Code 1">
-            <p>Pay via PayPal</p>
-        </div>
-        <div class="qr-code">
-            <img src="qr-code2.png" alt="QR Code 2">
-            <p>Pay via Google Pay</p>
-        </div>
-        <div class="qr-code">
-            <img src="qr-code3.png" alt="QR Code 3">
-            <p>Pay via Bank Transfer</p>
+        <h3>Our Mission</h3>
+        <p>Our mission is to empower businesses with cutting-edge technology solutions that drive efficiency, enhance security, and foster growth. We strive to be at the forefront of technological innovation, providing our clients with the tools they need to succeed in the digital age.</p>
+        
+        <h3>Our Services</h3>
+        <ul>
+            <li><i class="fas fa-code"></i> Software Development</li>
+            <li><i class="fas fa-cloud"></i> Cloud Computing</li>
+            <li><i class="fas fa-robot"></i> Artificial Intelligence</li>
+            <li><i class="fas fa-shield-alt"></i> Cybersecurity</li>
+        </ul>
+        
+        <h3>Contact Us</h3>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>123 Tech Park, Silicon Valley, USA</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:info@techinnovators.com">info@techinnovators.com</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <a href="tel:+18001234567">+1 800 123 4567</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-globe"></i>
+                <a href="http://www.techinnovators.com" target="_blank">www.techinnovators.com</a>
+            </div>
         </div>
     </div>
 </div>
 
-<div id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-container">
-        <div class="photo">
-            <img src="photo1.jpg" alt="Photo 1">
+<div class="page-container" id="products-services">
+
+    <div class="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <i class="fas fa-code"></i>
+            <div class="service-content">
+                <h3>Software Development</h3>
+                <p>We provide custom software development services tailored to your business needs. Our team of experts specializes in developing scalable and robust applications to help you achieve your goals.</p>
+            </div>
         </div>
-        <div class="photo">
-            <img src="photo2.jpg" alt="Photo 2">
+        <div class="service-item">
+            <i class="fas fa-cloud"></i>
+            <div class="service-content">
+                <h3>Cloud Computing</h3>
+                <p>Our cloud computing solutions enable businesses to leverage the power of the cloud for improved efficiency, flexibility, and scalability. We offer cloud migration, management, and support services.</p>
+            </div>
         </div>
-        <div class="photo">
-            <img src="photo3.jpg" alt="Photo 3">
+        <div class="service-item">
+            <i class="fas fa-robot"></i>
+            <div class="service-content">
+                <h3>Artificial Intelligence</h3>
+                <p>Our AI services include machine learning, natural language processing, and computer vision solutions that help businesses automate processes, gain insights, and enhance decision-making.</p>
+            </div>
         </div>
-        <div class="photo">
-            <img src="photo4.jpg" alt="Photo 4">
+        <div class="service-item">
+            <i class="fas fa-shield-alt"></i>
+            <div class="service-content">
+                <h3>Cybersecurity</h3>
+                <p>We offer comprehensive cybersecurity services to protect your business from cyber threats. Our services include vulnerability assessments, threat monitoring, and incident response.</p>
+            </div>
         </div>
     </div>
-    <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/example_video_id" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="page-container" id="payment">
+    <div class="payment">
+        <h2 class="section-heading">Payment</h2>
+
+        <div>
+
+            <table class="about-tbl">
+
+            <tbody>
+
+                <tr>
+
+                <td width="50%" class="td-label"><h3>Paytm Number</h3></td>
+
+                <td>: </td>
+
+                <td> 9825222824 </td>
+
+                </tr>
+
+                <tr>
+
+                <td width="50%" class="td-label"><h3>Phone Pe Number</h3></td>
+
+                <td>: </td>
+
+                <td> 9825222824 </td>
+
+                </tr>
+
+                <tr>
+
+                <td width="50%" class="td-label"><h3>Google Pay Number</h3></td>
+
+                <td>: </td>
+
+                <td> 9825222824 </td>
+
+                </tr>
+
+            </tbody>
+
+            </table>
+
+            <h3 align="center">Account Details:</h3>
+
+            <table class="about-tbl">
+
+            <tbody>
+
+                <tr>
+
+                <td width="50%" bgcolor="#f5f5f5" class="td-label"><h3>Bank Name</h3></td>
+
+                <td bgcolor="#f5f5f5">: </td>
+
+                <td bgcolor="#f5f5f5"> ICICI Bank </td>
+
+                </tr>
+
+                <tr>
+
+                <td width="50%" class="td-label"><h3>Account Holder Name</h3></td>
+
+                <td>: </td>
+
+                <td> Prashant Dave </td>
+
+                </tr>
+
+                <tr>
+
+                <td width="50%" bgcolor="#f5f5f5" class="td-label"><h3>Account Number</h3></td>
+
+                <td bgcolor="#f5f5f5">: </td>
+
+                <td bgcolor="#f5f5f5"> 174001504832 </td>
+
+                </tr>
+
+                <tr>
+
+                <td width="50%" class="td-label"><h3>Account Type</h3></td>
+
+                <td>: </td>
+
+                <td> Savings Account </td>
+
+                </tr>
+
+                <tr>
+
+                <td width="50%" bgcolor="#f5f5f5" class="td-label"><h3>IFSC code</h3></td>
+
+                <td bgcolor="#f5f5f5">: </td>
+
+                <td bgcolor="#f5f5f5"> ICIC0006244 </td>
+
+                </tr>
+
+            </tbody>
+
+            </table>
+
+            <h3 align="center">QR codes:</h3>
+
+            <div>
+
+            <h4>Paytm</h4>
+
+            <img src="demo-templates/images/paytmQR.png" class="qr-image"> </div>
+
+            <div>
+
+            <h4>Google Pay</h4>
+
+            <img src="demo-templates/images/googlepayQR.png" class="qr-image"> </div>
+            
+            <div>
+
+            <h4>PhonePe</h4>
+
+            <img src="demo-templates/images/phonepeQR.png" class="qr-image"> </div>
+
+        </div>
     </div>
 </div>
 
-<div id="feedback">
-    <h2>Feedback</h2>
-    <div class="reviews">
-        <div class="review">
-            <p>"Great service and support. Highly recommend!"</p>
-            <div class="stars">⭐⭐⭐⭐⭐</div>
-        </div>
-        <div class="review">
-            <p>"Professional and reliable. Excellent results."</p>
-            <div class="stars">⭐⭐⭐⭐</div>
-        </div>
-    </div>
-    <div class="feedback-form">
-        <h3>Leave Your Feedback</h3>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+<div class="page-container" id="videogallery">
+    <div class="video">
+        <h2 class="section-heading">Videos</h2>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+        <div class="p-10"></div>
 
-            <label for="rating">Rating:</label>
-            <div class="star-rating">
-                <input type="radio" id="star5" name="rating" value="5"><label for="star5" title="5 stars">5 stars</label>
-                <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="4 stars">4 stars</label>
-                <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 stars">3 stars</label>
-                <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="2 stars">2 stars</label>
-                <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="1 star">1 star</label>
+        <div>
+
+            <div class="card" style="padding: 10px">
+
+            <iframe src="https://www.youtube.com/embed/qyekpPUBOJU?rel=0&amp;loop=1&amp;playlist=qyekpPUBOJU" frameborder="0" allowfullscreen style="width: 100%"></iframe>
+
             </div>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            
+        </div>
 
-            <button type="submit">Submit</button>
+        <div class="section-close"></div>
+    </div>
+</div>
+
+<div class="page-container" id="feedback">
+    <div class="feedback">
+        <h2 class="section-heading">Feedbacks</h2>
+
+        <div class="feedback-list">
+
+            <div class="feedback-wrapper"> <span class="feedback-name-wrapper"><span class="feedback-name">Jigar Dave</span> on June 6, 2020 </span>
+
+            <div><span class="gl-star-rating-stars s50"><span data-value="1" data-text="Terrible"></span><span data-value="2" data-text="Poor"></span><span data-value="3" data-text="Average"></span><span data-value="4" data-text="Very Good"></span><span data-value="5" data-text="Excellent"></span></span></div>
+
+            <div>Excellent Web Design & Development Serviecs.</div>
+
+            <hr>
+
+            </div>
+
+            <div class="feedback-wrapper"> <span class="feedback-name-wrapper"><span class="feedback-name">Amrish Patel</span> on June 5, 2020 </span>
+
+            <div><span class="gl-star-rating-stars s50"><span data-value="1" data-text="Terrible"></span><span data-value="2" data-text="Poor"></span><span data-value="3" data-text="Average"></span><span data-value="4" data-text="Very Good"></span><span data-value="5" data-text="Excellent"></span></span></div>
+
+            <div>Creative Logo Design Services.</div>
+
+            <hr>
+
+            </div>
+
+        </div>
+
+        <form class="feedback-form card" novalidate>
+
+            <div class="feedback-form-heading">Give Feedback</div>
+
+            <select class="star-rating" id="rating" name="rating">
+
+            <option value="">Select a rating</option>
+
+            <option value="5">Excellent</option>
+
+            <option value="4">Very Good</option>
+
+            <option value="3">Average</option>
+
+            <option value="2">Poor</option>
+
+            <option value="1">Terrible</option>
+
+            </select>
+
+            <input type="text" name="feedbackName" id="feedbackName" placeholder="Enter Full Name"/>
+
+            <textarea name="feedback" id="feedback" placeholder="Enter your feedback"></textarea>
+
+            <input type="submit" value="Give Feedback" onClick="sendFeedback(this, 'prashant-dave')"/>
+
         </form>
     </div>
 </div>
 
-<div id="enquiry">
-    <h2>Enquiry Form</h2>
-    <div class="contact-icons">
-        <a href="mailto:info@example.com"><img src="email-icon.png" alt="Email Icon"></a>
-        <a href="tel:+1234567890"><img src="phone-icon.png" alt="Phone Icon"></a>
-        <a href="https://www.example.com/contact"><img src="location-icon.png" alt="Location Icon"></a>
-    </div>
-    <div class="enquiry-form">
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+<div class="page-container" id="enquiry">
+    <div class="enquiry">
+        <h2 class="section-heading">ENQUIRY FORM</h2>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+        <form class="enquiry-form" novalidate>
 
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject" required>
+            <input type="text" name="enquiryName" id="enquiryName" placeholder="Enter Full Name"/>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            <br/>
 
-            <button type="submit">Submit</button>
+            <div class="flex">
+
+            <div class="enquiry-phoneNumber">
+
+                <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Enter Phone Number"/>
+
+                <br/>
+
+            </div>
+
+            <div class="enquiry-email">
+
+                <input type="text" name="email" id="email" placeholder="Enter Email"/>
+
+                <br/>
+
+            </div>
+
+            </div>
+
+            <textarea name="message" id="message" placeholder="Enter Message"></textarea>
+
+            <br/>
+
+            <input type="submit" value="Send" onClick="sendEnquiry(this, 'edesignguru@gmail.com')"/>
+
         </form>
     </div>
 </div>
 
-<footer>
-    <p> &copy 2024 Company, Inc.</p>
-</footer>
+<div class="copyright">
+
+  <div class="copyright-inner"> © 2023 <a href="index.html" target="_blank">www.virtualbusinesscard.in</a> </div>
+
+</div>
+
+
+
+<!-- Footer Menu -->
+
+<div class="footer">
+
+  <ul class="footer-menu">
+
+    <li> <a class="footer-menu-link blue" href="#home"> <i class="footer-menu-icon fa fa-home"></i>
+
+      <div class="footer-menu-text">HOME</div>
+
+      </a> </li>
+
+    <li> <a class="footer-menu-link blue" href="#aboutus"> <i class="footer-menu-icon fa fa-user"></i>
+
+      <div class="footer-menu-text">ABOUT US</div>
+
+      </a> </li>
+
+    <li> <a class="footer-menu-link blue" href="#products-services"> <i class="footer-menu-icon fa fa-shopping-cart"></i>
+
+      <div class="footer-menu-text">PRODUCTS</div>
+
+      </a> </li>
+
+    <li> <a class="footer-menu-link blue" href="#payment"> <i class="footer-menu-icon fa fa-inr"></i>
+
+      <div class="footer-menu-text">PAYMENT</div>
+
+      </a> </li>
+
+    <li> <a class="footer-menu-link blue" href="#videogallery"> <i class="footer-menu-icon fa fa-youtube-square"></i>
+
+      <div class="footer-menu-text">VIDEOS</div>
+
+      </a> </li>
+
+    <li> <a class="footer-menu-link blue" href="#feedback"> <i class="footer-menu-icon fa fa-star-half-o"></i>
+
+      <div class="footer-menu-text">FEEDBACK</div>
+
+      </a> </li>
+
+    <li> <a class="footer-menu-link blue" href="#enquiry"> <i class="footer-menu-icon fa fa-comments"></i>
+
+      <div class="footer-menu-text">ENQUIRY</div>
+
+      </a> </li>
+
+  </ul>
+
+</div>
+
+<!-- The image Modal Popup-->
+
+<!-- The share Modal Popup -->
+
+
+</div>
+
+<script src="demo-templates/common/js/star-rating.js"></script> 
+
+<script src="demo-templates/common/js/script.js"></script>
+
 </body>
+
+
+<!-- Mirrored from virtualbusinesscard.in/template7 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Feb 2023 11:06:49 GMT -->
 </html>
+
