@@ -584,3 +584,44 @@ strong, b, h1, h2, h3, h4, h5 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 600px;
 }
+
+.card {
+    text-align: left;
+    /*background-color: #d8d8d870;*/
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), 0 0 40px rgba(255, 251, 251, 0.1) inset;
+}
+
+.card .card-title {
+    font-size: 15px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+    font-family: 'LatoRegular';
+}
+
+.product-description {
+    text-align: justify;
+    max-width: 100%;
+}
+.product-enquiry-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-price {
+    font-size: 15px;
+    color: #333; 
+}
+.product-enquiry-btn {
+    padding: 7px 15px;
+    color: #ffffff;
+    font-size: 14px;
+    display: inline-block;
+    background: var(--theme-color);
+    border-radius:5px;
+}
